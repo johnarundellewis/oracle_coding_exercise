@@ -11,7 +11,9 @@ Explanation of output:
 *** Path from ENTRANCE to EXIT:
 [u'ENTRANCE', u'EMPTY', u'MONSTER', u'EMPTY', u'TREASURE', u'EXIT']
 ```
-The above is just finding a path from the entrance to the exit. It uses the map data provided by as a sample (see maps/sample.json).
+The above is just finding a path from the entrance to the exit. It uses the map data provided  as a sample (see maps/sample.json).
+
+I have modelled the map as a binary tree, as this appeared to be enough to meet the spec (one entrance, 0-2 exits) and I could also represent the sample map using this. However I do believe that a more generic DAG (directed acyclic graph) would have allowed more freedom.
 
 (I have not implemented it, but interesting things could be done when one encounters a monster or treasure.
 Also - it currently only handles a single path.)
