@@ -1,0 +1,63 @@
+{
+  "ENTRANCE": {
+    "value": "ENTRANCE",
+    "arcs": [
+      "EMPTY1"
+    ]
+  },
+  "REWARD1": {
+    "value": "REWARD",
+    "arcs": [
+      "REWARD2",
+      "MIDDLEMONSTER"
+    ]
+  },
+  "EXTRAMONSTER": {
+    "value": "MONSTER",
+    "arcs": [
+      "EMPTY2"
+    ]
+  },
+  "MIDDLEMONSTER": {
+    "args": [
+      "MONSTER2"
+    ],
+    "value": "MONSTER"
+  },
+  "EMPTY1": {
+    "value": "EMPTY",
+    "arcs": [
+      "REWARD1",
+      "MONSTER1"
+    ]
+  },
+  "EMPTY2": {
+    "value": "EMPTY",
+    "arcs": [
+      "EXIT"
+    ]
+  },
+  "MONSTER2": {
+    "value": "MONSTER",
+    "arcs": [
+      "EXTRAMONSTER"
+    ]
+  },
+  "REWARD2": {
+    "value": "REWARD",
+    "arcs": [
+      "EMPTY2"
+    ]
+  },
+  "MONSTER1": {
+    "value": "MONSTER",
+    "arcs": [
+      "REWARD2",
+      "MONSTER2"
+    ]
+  },
+  "EXIT": {
+    "value": "EXIT"
+  }
+}
+
