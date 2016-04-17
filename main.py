@@ -1,7 +1,7 @@
 import argparse
 from models.graph import Graph
 from serializers.tree_serializers import TreeSerializerFactory
-from serializers.graph_serializers2 import GraphSerializerFactory
+from serializers.graph_serializers import GraphSerializerFactory
 
 # Author: John Lewis. Email: john.arundel.lewis@gmail.com
 
