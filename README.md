@@ -3,10 +3,38 @@
 This exercise runs using python 2.7.6 and does not require any dependencies.
 
 To run:
-  python main,py
+  python main.py [--graph-demo] [--tree-demo]
   
-Explanation of output:
+##Explanation of output:
 
+###For the Graph Demo:
+
+Shows the safest and most dangerous paths through the map:
+
+--- Graph Demo ---
+
+```
+Safest path(s):
+ENTRANCE
+EMPTY
+REWARD
+REWARD
+EMPTY
+EXIT
+
+Most dangerous path(s):
+ENTRANCE
+EMPTY
+MONSTER
+MONSTER
+MONSTER
+EMPTY
+EXIT
+```
+There are potentially multiple safest / most dangerous paths - all paths with the lowest / highest (but same) cost will be shown.
+
+
+### For the Tree Demo:
 ```
 *** Path from ENTRANCE to EXIT:
 [u'ENTRANCE', u'EMPTY', u'MONSTER', u'EMPTY', u'TREASURE', u'EXIT']
