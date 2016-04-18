@@ -11,9 +11,9 @@ To run:
 
 Shows the safest and most dangerous paths through the map:
 
+```
 --- Graph Demo ---
 
-```
 Safest path(s):
 ENTRANCE
 EMPTY
